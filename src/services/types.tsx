@@ -1,5 +1,5 @@
 
-interface Items {
+export interface Item {
     country: [string],
     dataProvider: [string],
     edmPreview: [string],
@@ -11,5 +11,5 @@ interface Items {
 export interface ApiResponse {
     success: boolean,
     itemsCount: number,
-    items: [Items]
+    items: Item[]
 }
